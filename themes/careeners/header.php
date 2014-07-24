@@ -34,6 +34,5 @@
 	$options_id = get_options_id(); 
 	echo wp_get_attachment_image( get_field( 'header-image', $options_id ), 'full', null, array( 'alt' => 'logo', 'title' => 'logo' ) );
 ?>
-	
 
 </header>
