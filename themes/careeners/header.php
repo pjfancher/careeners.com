@@ -30,9 +30,13 @@
 
 <header>
 
-<?php 
-	$options_id = get_options_id(); 
-	echo wp_get_attachment_image( get_field( 'header-image', $options_id ), 'full', null, array( 'alt' => 'logo', 'title' => 'logo' ) );
-?>
+<?php $options_id = get_options_id(); ?>
+<div class="row">
+	<div class="large-8 columns">
+		<?php echo wp_get_attachment_image( get_field( 'header-image', $options_id ), 'full', null, array( 'alt' => 'logo', 'title' => 'logo' ) ); ?>
+		
+	</div><!-- end .large-8 -->
+</div><!-- end .row -->	
+
 
 </header>
