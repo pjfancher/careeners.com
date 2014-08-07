@@ -1,33 +1,36 @@
-<?php
-	$locations = get_the_terms( get_the_ID(), 'location' ); 
-	foreach( $locations as $key => $location_object ) :
-		$location = get_field( 'field_53d41c9cc1cda', get_the_ID() );
-	endforeach;
-?>
+<?php $show_id = get_the_ID(); ?>
 <div class="show">
-	<div class="show-date">
 
-	</div><!-- end .show-date -->
-	<div class="show-location">
+    <div class="show-date">
+        <?php echo get_show_date( $show_id ); ?>
+    </div><!-- end .show-date -->
 
-	</div><!-- end .show-location -->
-	<div class="show-venue">
-		<?php echo get_the_venue( get_the_ID() ); ?>
-	</div><!-- end .show-venue -->
-	
-	<div class="show-event">
-		
-	</div><!-- end .show-event -->
-	<div class="show-bands">
-		<?php echo get_the_bands( get_the_ID() ); ?>
-	</div><!-- end .show-bands -->
-	<div class="show-lineup">
-		
-	</div><!-- end .show-line-up -->
-	<div class="show-flyer">
-		
-	</div><!-- end .show-flyer -->
-	<div class="show-photos">
-		
-	</div><!-- end .show-photos -->
+    <div class="show-location">
+        <?php echo get_the_location( $show_id ); ?> @ <?php echo get_the_venue( $show_id ); ?>
+    </div><!-- end .show-location -->
+
+    <div class="show-event">
+        <?php echo get_the_event( $show_id ); ?>
+    </div><!-- end .show-event -->
+
+    <div class="show-bands">
+        with: <?php echo get_the_bands( $show_id ); ?>
+    </div><!-- end .show-bands -->
+
+    <div class="show-lineup">
+        <?php echo get_the_lineup( $show_id ); ?>
+    </div><!-- end .show-lineup -->
+
+    <div class="show-tour">
+        <?php echo get_the_tour( $show_id ); ?>
+    </div><!-- end .show-tour -->
+
+    <div class="show-flyer">
+
+    </div><!-- end .show-flyer -->
+
+    <div class="show-photos">
+
+    </div><!-- end .show-photos -->
+
 </div><!-- end .show -->
