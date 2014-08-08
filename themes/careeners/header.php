@@ -17,6 +17,7 @@
 
 	<!-- Site Favicon --> 
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,300itali:' rel='stylesheet' type='text/css'>
 
 	<?php if ( get_home_url() == 'http://careeners.com' ) : ?>
 		<script>
@@ -33,8 +34,9 @@
 <?php $options_id = get_options_id(); ?>
 <div class="row">
 	<div class="large-8 columns">
-		<?php echo wp_get_attachment_image( get_field( 'header-image', $options_id ), 'full', null, array( 'alt' => 'logo', 'title' => 'logo' ) ); ?>
-		
+		<div class="header-logo">
+			<?php echo wp_get_attachment_image( get_field( 'header-image', $options_id ), 'full', null, array( 'alt' => 'logo', 'title' => 'logo' ) ); ?>
+		</div><!-- end .header-logo -->
 	</div><!-- end .large-8 -->
 </div><!-- end .row -->	
 

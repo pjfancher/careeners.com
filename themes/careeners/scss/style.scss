@@ -1,3 +1,11 @@
 @import "normalize.scss";
 @import "foundation.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
 @import "show-listing/show-listing.scss";
+
+body {
+	font-size: 13px;
+	font-family: "Merriweather";
+}

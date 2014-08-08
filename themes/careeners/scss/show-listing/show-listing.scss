@@ -2,20 +2,39 @@
 	section.show-listing {
 		margin-bottom: 10px;
 
+		.shows-total {
+			@include box;
+			margin: 0;
+		}
+
 		.show {
-			margin: 20px 0;
-			width: 500px;
+			@include box;	
+			&:first-child {
+				margin-top: 0;
+			}
 
 			.show-date {
 				font-weight: bold;
+				margin-bottom: 5px;
 			}
 			
+			.show-event {
+				font-style: italic;
+			}
+			.show-bands {
+				margin-bottom: 5px;
+			}
+
 			.show-lineup {
 				font-size: 12px;
 			}
 			
 			.show-tour {
 				font-size: 12px;
+			}
+
+			.show-flyer {
+				margin-top: 15px;
 			}
 		}
 	}

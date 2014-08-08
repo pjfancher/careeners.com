@@ -1,0 +1,8 @@
+$white: #FFFFFF;
+$black: #000000;
+$grayDarker:            lighten($black, 13.5%); // #222
+$grayDark:              lighten($black, 20%);   // #333
+$gray:                  lighten($black, 33.5%); // #555
+$grayLight:             lighten($black, 60%);   // #999
+$grayLighter:           lighten($black, 88%);   // #e0e0e0
+$grayLightest:          lighten($black, 98%);   // #f0f0f0

@@ -8844,24 +8844,72 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 1, scss/header.scss */
+header {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+/* line 6, scss/header.scss */
+header .header-logo {
+  margin: 30px 0 10px 0;
+}
+
 /* line 2, scss/show-listing/show-listing.scss */
 .page-template-page-templatesshow-listing-php section.show-listing {
   margin-bottom: 10px;
 }
 /* line 5, scss/show-listing/show-listing.scss */
-.page-template-page-templatesshow-listing-php section.show-listing .show {
-  margin: 20px 0;
+.page-template-page-templatesshow-listing-php section.show-listing .shows-total {
+  margin: 30px 0;
   width: 500px;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin: 0;
 }
-/* line 9, scss/show-listing/show-listing.scss */
+/* line 10, scss/show-listing/show-listing.scss */
+.page-template-page-templatesshow-listing-php section.show-listing .show {
+  margin: 30px 0;
+  width: 500px;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+/* line 12, scss/show-listing/show-listing.scss */
+.page-template-page-templatesshow-listing-php section.show-listing .show:first-child {
+  margin-top: 0;
+}
+/* line 16, scss/show-listing/show-listing.scss */
 .page-template-page-templatesshow-listing-php section.show-listing .show .show-date {
   font-weight: bold;
+  margin-bottom: 5px;
 }
-/* line 13, scss/show-listing/show-listing.scss */
+/* line 21, scss/show-listing/show-listing.scss */
+.page-template-page-templatesshow-listing-php section.show-listing .show .show-event {
+  font-style: italic;
+}
+/* line 24, scss/show-listing/show-listing.scss */
+.page-template-page-templatesshow-listing-php section.show-listing .show .show-bands {
+  margin-bottom: 5px;
+}
+/* line 28, scss/show-listing/show-listing.scss */
 .page-template-page-templatesshow-listing-php section.show-listing .show .show-lineup {
   font-size: 12px;
 }
-/* line 17, scss/show-listing/show-listing.scss */
+/* line 32, scss/show-listing/show-listing.scss */
 .page-template-page-templatesshow-listing-php section.show-listing .show .show-tour {
   font-size: 12px;
+}
+/* line 36, scss/show-listing/show-listing.scss */
+.page-template-page-templatesshow-listing-php section.show-listing .show .show-flyer {
+  margin-top: 15px;
+}
+
+/* line 8, scss/style.scss */
+body {
+  font-size: 13px;
+  font-family: "Merriweather";
 }
