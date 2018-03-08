@@ -3,8 +3,8 @@ Contributors: hereswhatidid
 Donate link: http://hereswhatidid.com/contact/
 Tags: jquery autocomplete, jquery ui, themeroller, search, autocomplete, ajax
 Requires at least: 3.x
-Tested up to: 3.9.1
-Stable tag: 2.1.4
+Tested up to: 4.1.1
+Stable tag: 2.1.16
 
 SearchAutocomplete implements the jQuery UI Autocomplete functionality on your Wordpress installation. 
 
@@ -56,6 +56,38 @@ Yes, but it's recommended that you create a copy of the theme that you are going
 Please <a href="http://hereswhatidid.com/contact/">contact the author</a> for support. Thanks!
 
 == Change log ==
+
+= 2.1.16 - 18 Apr 2015
+* fixed bug with unpublished posts in Relevanssi searches - Props Uriel
+
+= 2.1.15 - 17 Mar 2015
+* fixed bug with special characters in titles - Props Kramer
+
+= 2.1.14 - 18 Feb 2015
+* added Aristo theme to defaults
+* fixed bug with special characters in titles
+
+= 2.1.12 - 20 Nov 2014
+* added id parameter to 'the_title' filter calls, props to Ekin Hazal Bayar
+* fixed bug with Relevanssi when logged in as admin
+
+= 2.1.11 - 3 Nov 2014
+* removed extra line break at beginning of plugin file
+
+= 2.1.10 - 31 Oct 2014
+* ticked version to update repo
+
+= 2.1.8 - 17 Oct 2014
+* Fixed typo in default document selectors text
+* Removed short tag methods on the taxonomies list
+
+= 2.1.6 - 6 Oct 2014
+* Added support for Relevanssi search plugin
+* Changed default selector to match newer core themes
+
+= 2.1.5 - 1 Oct 2014
+* Fixed but with WPML installations
+* Added support for delay and autoFocus options
 
 = 2.1.4 - 27 Jun 2014
 * Ticking version to sync up repos
