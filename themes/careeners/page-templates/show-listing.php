@@ -21,7 +21,6 @@
 				</section>
 			</div><!-- end .large-8 -->
 			<div class="large-4 columns show-for-medium-up">
-				Search <!-- make into a sidebar template -->	
 			</div><!-- end .large-4 -->
 		</div><!-- end .row -->	
 </div><!-- end .container -->

@@ -26,7 +26,7 @@
     </div><!-- end .show-tour -->
 
     <div class="show-flyer">
-		<?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' ); ?>
+		<a href="<?php echo get_the_post_thumbnail_url( $show_id, 'full'  ); ?>" target="_blank"><?php echo get_the_post_thumbnail( $show_id, 'thumbnail' ); ?></a>
     </div><!-- end .show-flyer -->
 
     <div class="show-photos">
