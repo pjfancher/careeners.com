@@ -25,15 +25,20 @@ function my_taxonomy_args( $args, $taxonomy_name  ) {
     return $args;
 }
 
-/* Set API to return all shows be default
+/* Set API to return all $types by default
 *****************************************************************************/
 add_filter( 'rest_endpoints', function( $endpoints ){
-    if ( ! isset( $endpoints['/wp/v2/show'] ) ) :
-        return $endpoints;
-    endif;
+	$types = array('show', 'venue', 'location', 'tour', 'band', 'lineup');
 
-    $endpoints['/wp/v2/show'][0]['args']['per_page']['default'] = 700;
-    $endpoints['/wp/v2/show'][0]['args']['per_page']['maximum'] = 700;
+	foreach ( $types as $type ) :
+		if ( ! isset( $endpoints["/wp/v2/$type"] ) ) :
+			return $endpoints;
+		endif;
+
+		$endpoints["/wp/v2/$type"][0]['args']['per_page']['default'] = 1000;
+		$endpoints["/wp/v2/$type"][0]['args']['per_page']['maximum'] = 1000;
+	endforeach;
+
     return $endpoints;
 });
 
